@@ -1,0 +1,26 @@
+<!--components/ListCard/ListCard.wxml-->
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class="main" bindtap="navigateToView" data-postid="{{item.postid}}">
+  <image class="video-img" style="width:100%" mode="widthFix" src="{{item.image}}"></image>
+  <view class="cover"></view>
+  <view class="info-box">
+
+    <wxs module="m2">
+      var parseTime = function(str) {
+        if (str !== undefined) {
+          return [parseInt((str / 60) % 60), parseInt(str % 60)]
+            .join("′")
+        } else {
+          return 0;
+        }
+
+      }
+      module.exports.parseTime = parseTime
+    </wxs>
+
+    <text class="time">
+      <text wx:for="{{item.cates}}" wx:for-item="cate">{{cate.catename}}</text> {{tools.formatTime(item.duration)}} 
+    </text>
+    <text class="title">{{item.title}}</text>
+  </view>
+</view>

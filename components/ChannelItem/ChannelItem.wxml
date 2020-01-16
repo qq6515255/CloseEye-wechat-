@@ -1,0 +1,7 @@
+<!--components/ChannelItem/ChannelItem.wxml-->
+<view class="main" wx:if="itemData!==null">
+    <view class="cover"></view>
+    <image class="bg" src="{{itemData.icon}}"></image>
+    <view class="info"># {{itemData.catename}} #</view>
+  </view>
+

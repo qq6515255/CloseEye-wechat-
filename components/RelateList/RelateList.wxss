@@ -1,0 +1,44 @@
+/* components/RelateList/RelateList.wxss */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+} 
+.relate {
+  padding: 3vh 2vh;
+}
+.relate .title {
+  overflow: hidden;
+  padding: 15px 0;
+  line-height: 3vh;
+}
+.relate .title .left {
+  float: left;
+  font-weight: bold;
+  line-height: 3vh;
+} 
+.relate .title .right {
+  float: right;
+  font-size: 12px;
+  line-height: 3vh;
+
+}
+.relate .content-list {
+  display: block;
+  overflow-y: auto;
+  white-space: nowrap;
+}
+.relate .content-list .li {
+  display: inline-block;
+  width: 40vw;
+  height: 25vw;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.relate .content-list .li .list-item {
+  height: 100% !important;
+  width: 100% !important;
+}
+.relate .content-list .li .list-item img {
+  height: 100% !important;
+}

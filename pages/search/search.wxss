@@ -1,0 +1,66 @@
+/* pages/search/search.wxss */
+
+page{
+  background-color: #1a1a1a;
+}
+.search-main{
+  position: relative;
+  overflow: hidden;
+
+}
+.weui-search-bar{
+  background-color: transparent !important;
+
+}
+.weui-search-bar__cancel-btn{
+  color: #e2e2e2;
+}
+.weui-icon-search_in-box{
+  margin-top: -7px;
+}
+.weui-search-bar__label{
+  color: #e2e2e2 ;
+  text-align: left;
+  padding: 0px 3vw;
+  background-color: #3e3d3d !important;
+  border-radius: 2px;
+}
+.weui-search-bar__input{
+  color: #e2e2e2;
+}
+.weui-search-bar__box{
+  background-color: #3e3d3d !important;
+}
+.search-main .hot-words{
+    width: 100%;
+    padding: 0px 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.weui-icon-search{
+  color: #e2e2e2 ;
+}
+.search-main .hot-words .title{
+    font-size: 16px;
+    color: #e2e2e2;
+    text-align: left;
+    margin: 10px 0px;
+    overflow: hidden;
+    line-height: 20px;
+}
+.keywords{
+    overflow: hidden;
+    padding: 5px 0px;
+    width: 100%;
+}
+.keywords .word{
+  float: left;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 10px 5px 0px;
+    line-height: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}

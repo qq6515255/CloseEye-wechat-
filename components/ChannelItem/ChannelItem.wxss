@@ -1,0 +1,39 @@
+/* components/ChannelItem/ChannelItem.wxss */
+.main {
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+}
+.main .cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.main .bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+.main .info {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  transform: translateY(-50%);
+  z-index: 2;
+}

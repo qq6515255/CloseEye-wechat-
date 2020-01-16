@@ -1,0 +1,6 @@
+<!--pages/channelList/channelList.wxml-->
+<view wx:if="{{loadList.length>0}}">
+  <view class="list" wx:for="{{loadList}}">
+    <ListCard wx:for="{{item}}" wx:for-item="list" item="{{list}}"></ListCard>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--components/RelateList/RelateList.wxml-->
+<view class="relate">
+  <view class="title">
+    <text class="left" wx:if="listData!==null">{{listData.name}}</text>
+    <text class="right">more</text>
+  </view>
+  <view class="content-list" wx:if="listData.list.length>0">
+    <ListCard wx:for="{{listData.list}}" class="li" item="{{item}}"></ListCard>
+  </view>
+</view>

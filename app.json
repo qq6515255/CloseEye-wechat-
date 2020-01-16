@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/category/category",
+    "pages/list/list",
+    "pages/view/view",
+    "pages/channelList/channelList"
+  ],
+  "window": {
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "闭眼视频",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#000",
+    "color": "#ccc",
+    "selectedColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath":"static/hot.png",
+        "selectedIconPath": "static/hotActive.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "频道",
+        "iconPath": "static/ch.png",
+        "selectedIconPath": "static/chActive.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

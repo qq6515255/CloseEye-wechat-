@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ListCard": "/components/ListCard/ListCard"
+  },
+  "enablePullDownRefresh":true
+}

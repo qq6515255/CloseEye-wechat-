@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "ListCard": "/components/ListCard/ListCard"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "精选结果"
+}

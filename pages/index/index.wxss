@@ -1,0 +1,35 @@
+/* pages/search/search.wxss */
+
+page{
+  background-color: black;
+  color: white;
+}
+.weui-search-bar {
+  background: black;
+}
+
+.weui-search-bar__form {
+  background: #333;
+}
+.list{
+  overflow: hidden;
+  position: relative;
+}
+.list .title{
+  display: block;
+  width: 100%;
+  padding:3vh 0rpx;
+  text-align: center;
+  line-height: 3vh;
+  font-size: 30rpx;
+  font-weight: 600;
+  
+}
+.loading{
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding: 2vh 0px;
+}

@@ -1,0 +1,9 @@
+/* pages/channelList/channelList.wxss */
+page{
+  background-color: #1a1a1a;
+  min-height: 100vh;
+}
+.list{
+  display: block;
+  overflow: hidden;
+}

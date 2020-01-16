@@ -1,0 +1,25 @@
+/* pages/category/category.wxss */
+
+.fix {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main channel-item {
+  flex-shrink: 0;
+  float: left;
+}
+
+.main ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

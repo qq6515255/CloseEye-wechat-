@@ -1,0 +1,26 @@
+<!--pages/view/view.wxml-->
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class="view-main">
+  <view class="video">
+    <video style="width:100%" id="myVideo" src="{{currentData.content_video[0].progressive[3].url}}" controls></video>
+  </view>
+  <!-- 标题部分 -->
+
+  <view class="info">
+    <view class="title">{{ currentData.title }}</view>
+    <view class="titleInfo">
+      <text wx:for="{{currentData.cate}}">{{ item }} </text> / {{tools.formatTime(currentData.duration)}}
+    </view>
+    <view class="content">{{ currentData.intro }}</view>
+
+  </view>
+
+  <!-- 推荐组件 -->
+  <RelateList wx:for="{{currentData.relate_video}}" listData="{{item}}"></RelateList>
+  <view class="end">- End -</view>
+  <view class="loadding" wx:if="{{loadding}}">
+    <view class="weui-loading__wrp">
+      <view class="weui-loading"></view>
+    </view>
+  </view>
+</view>

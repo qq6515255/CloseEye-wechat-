@@ -1,0 +1,37 @@
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+    <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="navigateToSearch">
+      <icon class="weui-icon-search" type="search" size="14"></icon>
+      <view class="weui-search-bar__text">搜索</view>
+    </label>
+  </view>
+  <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+</view>
+
+<swiper style="height:400rpx" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{indexData.banner.list}}">
+    <swiper-item>
+      <view class="swiper-item {{item}}">
+        <image style="width:100%" mode="widthFix" src="{{item.image}}"></image>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="list">
+  <text class="title">{{indexData.today.selection_title}}</text>
+  <ListCard wx:for="{{indexData.today.list}}" item="{{item}}"></ListCard>
+</view>
+
+<view class="list"  wx:for="{{loadList}}">
+  <text class="title">{{item.selection_title}}</text>
+  <ListCard wx:for="{{item.list}}"  wx:for-item="list" item="{{list}}"></ListCard>
+</view>
+<text class="loading" wx:if="{{loading}}"> - 正在加载 - </text>

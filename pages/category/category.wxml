@@ -1,0 +1,7 @@
+<!--pages/category/category.wxml-->
+<view class="main menu-container" ref="menuContainer">
+  <ChannelItem wx:for="{{listdata}}" itemData="{{item}}" bindtap="enterList" data-cateid="{{item.cateid}}"></ChannelItem>
+  <!-- <van-overlay :show="loading === true" z-index="999" duration="0.5">
+        <van-loading class="fix" color="#1989fa" />
+      </van-overlay> -->
+</view>

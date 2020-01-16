@@ -1,0 +1,7 @@
+<!--pages/list/list.wxml-->
+<view class="list"  wx:for="{{loadList}}">
+  <text class="title">{{item.selection_title}}</text>
+  <ListCard wx:for="{{item.list}}"  wx:for-item="list" item="{{list}}"></ListCard>
+</view>
+<text class="loading" wx:if="{{loading}}"> - 正在加载 - </text>
+<text class="loading" wx:if="{{nextUrl==null}}"> - 已经莫得了 - </text>
